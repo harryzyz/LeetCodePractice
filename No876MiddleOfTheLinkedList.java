@@ -1,13 +1,12 @@
-import java.util.LinkedList;
 
 public class No876MiddleOfTheLinkedList {
     public static void main(String[] args) {
 
     }
 
-    public static LinkedList<Integer> middleNode(LinkedList<Integer> head) {
-
-        return head;
+    public ListNode middleNode(ListNode head) {
+        
+        return null;
     }
 
     /**
@@ -22,6 +21,8 @@ public class No876MiddleOfTheLinkedList {
      */
 
 }
+
+
 
 // Given the head of a singly linked list, return the middle node of the linked
 // list.
