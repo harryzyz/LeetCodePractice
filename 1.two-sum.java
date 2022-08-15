@@ -1,4 +1,3 @@
-import java.lang.annotation.Retention;
 
 /*
  * @lc app=leetcode id=1 lang=java
