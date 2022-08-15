@@ -12,7 +12,7 @@ public class No876MiddleOfTheLinkedList {
         // ListNode head = new ListNode();
         
         // System.out.println(head.next);
-        linkylist.
+        
         // System.out.println(middleNode(head));
     }
 

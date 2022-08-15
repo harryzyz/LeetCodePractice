@@ -13,10 +13,6 @@ public class No412FizzBuzz {
 
     }
 
-    public static void Tests() {
-        @Test
-        
-    }
 
     public static List<String> FizzBuzz(int n) {
         List<String> answer = new ArrayList<String>();
