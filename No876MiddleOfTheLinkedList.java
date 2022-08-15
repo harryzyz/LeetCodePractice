@@ -1,12 +1,29 @@
+import java.util.LinkedList;
 
 public class No876MiddleOfTheLinkedList {
     public static void main(String[] args) {
-
+        LinkedList<Integer> linkylist = new LinkedList<Integer>();
+        linkylist.add(1);
+        linkylist.add(2);
+        linkylist.add(3);
+        linkylist.add(4);
+        linkylist.add(5);
+        System.out.println(linkylist);
+        // ListNode head = new ListNode();
+        
+        // System.out.println(head.next);
+        linkylist.
+        // System.out.println(middleNode(head));
     }
 
-    public ListNode middleNode(ListNode head) {
-        
-        return null;
+    // public static LinkedList<Integer> middleNode(LinkedList<Integer> head) {
+        public static ListNode middleNode(ListNode head) {    
+        ListNode i = head, j = head;
+        while (j != null && j.next != null) {
+            j = j.next.next;
+            i = i.next;
+        }
+        return i;
     }
 
     /**

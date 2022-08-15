@@ -1,12 +1,21 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Test;
+
 public class No412FizzBuzz {
     public static void main(String[] args) {
         System.out.println(FizzBuzz(3).toString());
         System.out.println(FizzBuzz(5).toString());
         System.out.println(FizzBuzz(15).toString());
 
+        
+
+    }
+
+    public static void Tests() {
+        @Test
+        
     }
 
     public static List<String> FizzBuzz(int n) {
