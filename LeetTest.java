@@ -1,19 +1,15 @@
-/*
- * @lc app=leetcode id=26 lang=java
- *
- * [26] Remove Duplicates from Sorted Array
- */
+import java.util.Arrays;
 
-// @lc code=start
-class Solution {
-    public int removeDuplicates(int[] nums) {
-        
+public class LeetTest {
+    public static void main(String[] args) {
+        int[] nums = {0,0,1,1,1,2,2,3,3,4};
         int target = nums[0];
         int endpoint = nums[nums.length - 1];
         int counter = 1;
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] == target) {
                 nums[i] = nums[0] - 1;
+                continue;
             } else if (nums[i] > target) {
                 target = nums[i];
                 counter++;
@@ -29,8 +25,7 @@ class Solution {
         if (nums[counter - 2] < endpoint) {
             nums[counter - 1] = endpoint;
         }
-
-        return counter;
+        System.out.println(counter);
+        System.out.println(Arrays.toString(nums));
     }
 }
-// @lc code=end

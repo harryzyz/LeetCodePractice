@@ -7,7 +7,7 @@
 // @lc code=start
 class Solution {
     public int scoreOfStudents(String s, int[] answers) {
-        
+        return 0;
     }
 }
 // @lc code=end
