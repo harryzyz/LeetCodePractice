@@ -13,5 +13,6 @@ class Solution(object):
         :rtype: int
         """
         
+        
 # @lc code=end
 
