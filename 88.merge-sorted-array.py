@@ -15,8 +15,8 @@ class Solution(object):
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
         for idx2 in range(n):
-            for idx1 in range(m):
-                if nums2[idx2] < nums1[idx1]:
+            for idx1 in range(m+n):
+                if (nums2[idx2] < nums1[idx1] )| (nums1[idx1] == 0):
                     # nums1.insert(idx1,nums2[idx2]).pop()
                     nums1[idx1+1:] = nums1[idx1:-1]
                     nums1[idx1] = nums2[idx2] 
