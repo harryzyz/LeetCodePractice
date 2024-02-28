@@ -14,13 +14,8 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        for idx2 in range(n):
-            for idx1 in range(m+n):
-                if (nums2[idx2] < nums1[idx1] )| (nums1[idx1] == 0):
-                    # nums1.insert(idx1,nums2[idx2]).pop()
-                    nums1[idx1+1:] = nums1[idx1:-1]
-                    nums1[idx1] = nums2[idx2] 
-                    break                                 
+        nums1[m:] = nums2
+        nums1.sort()                
         return None
         
 # @lc code=end
