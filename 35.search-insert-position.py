@@ -12,6 +12,12 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        for idx, num in enumerate(nums):
+            if num < target:
+                pass
+            else:
+                return idx
+        return len(nums)
         
         
 # @lc code=end
