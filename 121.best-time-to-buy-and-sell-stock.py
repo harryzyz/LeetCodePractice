@@ -11,6 +11,12 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
+        profit = 0
+        for idx, cv in enumerate(prices[:-1]):
+            diff = max(list(map(lambda x: x - cv, prices[idx+1:])))
+            if diff > profit:
+                profit = diff
+        return profit
         
 # @lc code=end
 
